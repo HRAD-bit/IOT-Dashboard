@@ -89,7 +89,7 @@ export default {
             me.$router.push({ name: "Dashboard" });
             me.$swal.fire(
               "Sesión iniciada!",
-              "Bienvenido " + me.loginData.email,
+              "Bienvenido " + me.loginData.email + ". ID: "+response.data.id,
               "success"
             );
           }

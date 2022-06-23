@@ -93,7 +93,7 @@ export default {
             // console.log(response.data);
             me.$swal.fire(
               "Registro exitoso!",
-              "Bienvenido " + me.registerData.email,
+              "Bienvenido " + me.registerData.email + ". ID: " + response.data.id,
               "success"
             );
             me.$router.push({ name: "Dashboard" });
